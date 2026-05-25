@@ -71,9 +71,9 @@ export default function Footer() {
 
             {/* Contact details */}
             <div className="mt-6 space-y-2.5 text-sm">
-              <a href="mailto:hello@hrflow.app" className="flex items-center gap-2.5 transition-colors hover:text-primary-300">
+              <a href="mailto:support@nexuxhr.com" className="flex items-center gap-2.5 transition-colors hover:text-primary-300">
                 <Mail className="h-4 w-4 text-primary-400/80" />
-                hello@hrflow.app
+                support@nexuxhr.com
               </a>
               <a href="tel:+15551234567" className="flex items-center gap-2.5 transition-colors hover:text-primary-300">
                 <Phone className="h-4 w-4 text-primary-400/80" />
@@ -81,7 +81,7 @@ export default function Footer() {
               </a>
               <span className="flex items-center gap-2.5">
                 <MapPin className="h-4 w-4 text-primary-400/80" />
-                San Francisco, CA
+                Birtamode-Jhapa, Nepal
               </span>
             </div>
           </div>
@@ -118,13 +118,19 @@ export default function Footer() {
 
             {/* Social */}
             <div className="mt-6 flex gap-3">
-              {['Li', 'X', 'Gh', 'Yt'].map((s, i) => (
+              {[
+                // { label: 'TikTok', href: 'https://tiktok.com' },
+                { label: 'Facebook', href: 'https://www.facebook.com/people/Nexux-HR/61590411146271/?mibextid=wwXIfr&rdid=rvVEWIuOjV1wH3t4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DsRqRDtbE%2F%3Fmibextid%3DwwXIfr' },
+                // { label: 'Instagram', href: 'https://instagram.com' },
+              ].map((s) => (
                 <a
-                  key={i}
-                  href="#"
-                  className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/[0.07] text-xs font-bold text-gray-500 transition-all hover:border-primary-500/30 hover:text-primary-400"
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex h-8 px-3 items-center justify-center rounded-lg border border-white/[0.07] text-xs font-medium text-gray-500 transition-all hover:border-primary-500/30 hover:text-primary-400"
                 >
-                  {s}
+                  {s.label}
                 </a>
               ))}
             </div>
@@ -135,7 +141,7 @@ export default function Footer() {
       {/* ── Bottom bar ── */}
       <div className="border-t border-white/[0.06]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-xs text-gray-600 sm:flex-row sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} HRFlow · A product of <a href="#" className="text-primary-400/80 hover:text-primary-300 transition-colors">NexuxLabs</a></p>
+          <p>© {new Date().getFullYear()} HRFlow · A product of <a href="https://www.nexuxlabs.com/en/" className="text-primary-400/80 hover:text-primary-300 transition-colors">NexuxLabs</a></p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-gray-400 transition-colors">Privacy</Link>
             <Link to="/terms" className="hover:text-gray-400 transition-colors">Terms</Link>

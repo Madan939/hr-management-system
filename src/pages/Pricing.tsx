@@ -6,12 +6,12 @@ import AnimatedSection from '../components/AnimatedSection';
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Free',
     desc: 'Perfect for small teams getting started with HR management.',
-    monthly: 29,
-    yearly: 24,
+    monthly: 0,
+    yearly: 0,
     features: [
-      'Up to 25 employees',
+      'Up to 10 employees',
       'Employee directory',
       'Basic attendance tracking',
       'Leave management',
@@ -23,11 +23,11 @@ const plans = [
   {
     name: 'Business',
     desc: 'For growing companies that need powerful HR automation.',
-    monthly: 79,
-    yearly: 65,
+    monthly: 4,
+    yearly: 3,
     popular: true,
     features: [
-      'Up to 200 employees',
+      'Up to 150 employees',
       'Everything in Starter',
       'Advanced attendance & shifts',
       'Payroll processing',
@@ -43,10 +43,10 @@ const plans = [
   {
     name: 'Enterprise',
     desc: 'For large organizations with complex HR needs.',
-    monthly: 199,
-    yearly: 166,
+    monthly: 7,
+    yearly: 5,
     features: [
-      'Unlimited employees',
+      'Up to 400 employees',
       'Everything in Business',
       'Custom integrations',
       'Dedicated account manager',
@@ -110,17 +110,15 @@ export default function Pricing() {
               <div className="mt-10 inline-flex items-center gap-4 glass-card rounded-2xl p-2">
                 <button
                   onClick={() => setIsYearly(false)}
-                  className={`rounded-xl px-6 py-2.5 text-sm font-semibold transition-all ${
-                    !isYearly ? 'gradient-primary text-white shadow-lg' : 'text-gray-600 hover:text-gray-900'
-                  }`}
+                  className={`rounded-xl px-6 py-2.5 text-sm font-semibold transition-all ${!isYearly ? 'gradient-primary text-white shadow-lg' : 'text-gray-600 hover:text-gray-900'
+                    }`}
                 >
                   Monthly
                 </button>
                 <button
                   onClick={() => setIsYearly(true)}
-                  className={`rounded-xl px-6 py-2.5 text-sm font-semibold transition-all ${
-                    isYearly ? 'gradient-primary text-white shadow-lg' : 'text-gray-600 hover:text-gray-900'
-                  }`}
+                  className={`rounded-xl px-6 py-2.5 text-sm font-semibold transition-all ${isYearly ? 'gradient-primary text-white shadow-lg' : 'text-gray-600 hover:text-gray-900'
+                    }`}
                 >
                   Yearly
                   <span className="ml-1.5 rounded-full bg-red-100 px-2 py-0.5 text-xs font-bold text-red-700">
@@ -141,11 +139,10 @@ export default function Pricing() {
               <AnimatedSection key={plan.name} delay={i * 0.1}>
                 <motion.div
                   whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                  className={`relative rounded-3xl p-8 h-full flex flex-col ${
-                    plan.popular
-                      ? 'gradient-primary text-white shadow-2xl shadow-red-500/25 ring-4 ring-red-500/20 scale-[1.02] lg:scale-105'
-                      : 'glass-card'
-                  }`}
+                  className={`relative rounded-3xl p-8 h-full flex flex-col ${plan.popular
+                    ? 'gradient-primary text-white shadow-2xl shadow-red-500/25 ring-4 ring-red-500/20 scale-[1.02] lg:scale-105'
+                    : 'glass-card'
+                    }`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-1.5 text-xs font-bold text-red-700 shadow-lg">
@@ -185,11 +182,10 @@ export default function Pricing() {
 
                   <Link
                     to="/contact"
-                    className={`mt-8 block rounded-2xl py-3.5 text-center text-sm font-semibold transition-all ${
-                      plan.popular
-                        ? 'bg-white text-red-700 hover:bg-gray-50 shadow-lg'
-                        : 'gradient-primary text-white shadow-lg shadow-red-500/25 hover:shadow-xl'
-                    }`}
+                    className={`mt-8 block rounded-2xl py-3.5 text-center text-sm font-semibold transition-all ${plan.popular
+                      ? 'bg-white text-red-700 hover:bg-gray-50 shadow-lg'
+                      : 'gradient-primary text-white shadow-lg shadow-red-500/25 hover:shadow-xl'
+                      }`}
                   >
                     {plan.name === 'Enterprise' ? 'Contact Sales' : 'Start Free Trial'}
                   </Link>

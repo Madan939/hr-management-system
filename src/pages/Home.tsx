@@ -44,9 +44,9 @@ const testimonials = [
 ];
 
 const plans = [
-  { name: 'Starter', price: 2, features: ['Up to 25 employees', 'Basic attendance', 'Leave management', 'Email support'], per: '/month' },
-  { name: 'Business', price: 4, features: ['Up to 200 employees', 'Advanced analytics', 'Payroll processing', 'Priority support', 'API access'], popular: true, per: '/month' },
-  { name: 'Enterprise', price: 7, features: ['Unlimited employees', 'Custom integrations', 'Dedicated manager', '24/7 phone support', 'SLA guarantee', 'On-premise option'], per: '/month' },
+  { name: 'Free', price: 0, features: ['Up to 10 employees', 'Basic attendance', 'Leave management', 'Email support'], per: '/month' },
+  { name: 'Business', price: 4, features: ['Up to 150 employees', 'Advanced analytics', 'Payroll processing', 'Priority support', 'API access'], popular: true, per: '/employee/month' },
+  { name: 'Enterprise', price: 7, features: ['Up to 400 employees', 'Custom integrations', 'Dedicated manager', '24/7 phone support', 'SLA guarantee', 'On-premise option'], per: '/employee/month' },
 ];
 
 export default function Home() {
@@ -336,8 +336,8 @@ export default function Home() {
                 <motion.div
                   whileHover={{ y: -8, transition: { duration: 0.3 } }}
                   className={`relative rounded-3xl p-8 h-full flex flex-col ${plan.popular
-                      ? 'gradient-primary text-white shadow-2xl shadow-blue-500/25 ring-4 ring-blue-500/20'
-                      : 'glass-card'
+                    ? 'gradient-primary text-white shadow-2xl shadow-blue-500/25 ring-4 ring-blue-500/20'
+                    : 'glass-card'
                     }`}
                 >
                   {plan.popular && (
@@ -367,8 +367,8 @@ export default function Home() {
                   <Link
                     to="/pricing"
                     className={`mt-8 block rounded-2xl py-3.5 text-center text-sm font-semibold transition-all ${plan.popular
-                        ? 'bg-white text-blue-700 hover:bg-gray-50 shadow-lg'
-                        : 'gradient-primary text-white shadow-lg shadow-blue-500/25 hover:shadow-xl'
+                      ? 'bg-white text-blue-700 hover:bg-gray-50 shadow-lg'
+                      : 'gradient-primary text-white shadow-lg shadow-blue-500/25 hover:shadow-xl'
                       }`}
                   >
                     Get Started

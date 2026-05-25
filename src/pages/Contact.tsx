@@ -60,8 +60,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-sm text-gray-600 mt-1">hello@hrflow.app</p>
-                      <p className="text-sm text-gray-600">sales@hrflow.app</p>
+                      <p className="text-sm text-gray-600 mt-1">support@nexuxhr.com</p>
+
                     </div>
                   </div>
 
@@ -77,15 +77,15 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-red-50">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-red-50">
                       <MapPin className="h-5 w-5 text-red-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Office</h3>
                       <p className="text-sm text-gray-600 mt-1">
-                        123 Innovation Drive<br />
-                        San Francisco, CA 94105<br />
-                        United States
+                        Birtamode,
+                        Jhapa<br />
+                        Nepal
                       </p>
                     </div>
                   </div>
@@ -95,33 +95,16 @@ export default function Contact() {
                 <div className="mt-10">
                   <h3 className="font-semibold text-gray-900 mb-4">Follow Us</h3>
                   <div className="flex gap-3">
-                    {['Twitter', 'LinkedIn', 'GitHub', 'YouTube'].map((social) => (
+                    {[{ label: "facebook", href: "https://www.facebook.com/people/Nexux-HR/61590411146271/?mibextid=wwXIfr&rdid=rvVEWIuOjV1wH3t4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DsRqRDtbE%2F%3Fmibextid%3DwwXIfr" }].map((social) => (
                       <a
-                        key={social}
-                        href="#"
+                        key={social.href}
+                        href={social.href}
                         className="rounded-xl bg-gray-100 px-4 py-2.5 text-xs font-semibold text-gray-600 transition-all hover:bg-red-50 hover:text-red-700"
                       >
-                        {social}
+                        {social.label}
                       </a>
                     ))}
                   </div>
-                </div>
-
-                {/* Quick help cards */}
-                <div className="mt-10 space-y-3">
-                  {[
-                    { icon: MessageSquare, title: 'Live Chat', desc: 'Chat with our team in real-time' },
-                    { icon: Clock, title: 'Response Time', desc: 'We respond within 2 hours' },
-                    { icon: Globe, title: 'Global Support', desc: 'Available in 5+ languages' },
-                  ].map((item) => (
-                    <div key={item.title} className="flex items-center gap-3 glass-card rounded-xl p-4">
-                      <item.icon className="h-5 w-5 text-red-500 flex-shrink-0" />
-                      <div>
-                        <p className="text-sm font-semibold text-gray-900">{item.title}</p>
-                        <p className="text-xs text-gray-500">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
                 </div>
               </AnimatedSection>
             </div>
@@ -237,26 +220,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map */}
-      <section className="pb-24 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <AnimatedSection>
-            <div className="glass-card rounded-3xl overflow-hidden shadow-xl">
-              <iframe
-                title="HRFlow Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0197537971814!2d-122.39896228467484!3d37.78770697975766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807c5e7e6a0f%3A0x1a1a1a1a1a1a1a1a!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1"
-                width="100%"
-                height="400"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full"
-              />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
     </div>
   );
 }

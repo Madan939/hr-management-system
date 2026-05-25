@@ -115,9 +115,9 @@ export default function Privacy() {
                     If you have any questions about this Privacy Policy, please contact us at:
                   </p>
                   <p className="text-gray-600 mt-3">
-                    <strong>Company:</strong> NexuxLabs (HRFlow)<br />
-                    <strong>Email:</strong> privacy@hrflow.app<br />
-                    <strong>Address:</strong> 123 Innovation Drive, San Francisco, CA 94105<br />
+                    <strong>Company:</strong>NexuxHR<br />
+                    <strong>Email:</strong> support@nexuxhr.com<br />
+                    <strong>Address:</strong> Birtamode-Jhapa, Nepal<br />
                     <strong>Phone:</strong> +1 (555) 123-4567
                   </p>
                 </div>
