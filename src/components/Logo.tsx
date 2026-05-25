@@ -57,9 +57,9 @@ export function LogoIcon({ className = 'h-9 w-9' }: { className?: string }) {
 
       <defs>
         <linearGradient id="logoGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#DC2626" />
-          <stop offset="0.5" stopColor="#EF4444" />
-          <stop offset="1" stopColor="#B91C1C" />
+          <stop stopColor="#3C51A3" />
+          <stop offset="0.5" stopColor="#34468E" />
+          <stop offset="1" stopColor="#304081" />
         </linearGradient>
       </defs>
     </svg>
@@ -80,12 +80,12 @@ export default function Logo({ size = 'md', variant = 'dark', showPoweredBy = fa
       <div className="flex items-center gap-2.5">
         <LogoIcon className={s.icon} />
         <span className={`${s.text} font-bold tracking-tight ${variant === 'dark' ? 'text-gray-900' : 'text-white'}`}>
-          HR<span className={variant === 'dark' ? 'text-gradient' : 'text-red-300'}>Flow</span>
+          Nexux<span className={variant === 'dark' ? 'text-gradient' : 'text-blue-300'}>HR</span>
         </span>
       </div>
       {showPoweredBy && (
         <span className={`${s.powered} mt-1 ml-[calc(2.5rem+10px)] font-medium tracking-wide ${variant === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
-          Powered by <span className={variant === 'dark' ? 'text-primary-600 font-semibold' : 'text-red-300 font-semibold'}>NexusLabs</span>
+          Powered by <span className={variant === 'dark' ? 'text-primary-600 font-semibold' : 'text-blue-300 font-semibold'}>NexuxLabs</span>
         </span>
       )}
     </div>

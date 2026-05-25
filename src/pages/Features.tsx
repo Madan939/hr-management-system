@@ -37,13 +37,6 @@ const mainFeatures = [
     gradient: 'from-red-500 to-red-700',
   },
   {
-    icon: UserPlus,
-    title: 'Recruitment',
-    desc: 'End-to-end hiring pipeline. From job posting to offer letter, manage every step of the recruitment process.',
-    details: ['Job board integration', 'Applicant tracking', 'Interview scheduling', 'Offer management', 'Onboarding workflows'],
-    gradient: 'from-red-600 to-red-800',
-  },
-  {
     icon: TrendingUp,
     title: 'Performance Reviews',
     desc: 'Continuous feedback and goal tracking. Run 360° reviews and help your team grow with structured performance management.',
@@ -61,7 +54,7 @@ const mainFeatures = [
 
 const additionalFeatures = [
   { icon: Shield, title: 'Enterprise Security', desc: 'SOC 2 compliant with end-to-end encryption.' },
-  { icon: Layers, title: 'Integrations', desc: 'Connect with 100+ tools you already use.' },
+  { icon: Layers, title: 'EMS', desc: 'Connect with 100+ tools you already use.' },
   { icon: Settings, title: 'Customization', desc: 'Fully customizable workflows and fields.' },
   { icon: FileText, title: 'Document Management', desc: 'Store, sign, and manage all HR documents.' },
   { icon: Bell, title: 'Smart Notifications', desc: 'Stay informed with intelligent alerts.' },
@@ -209,7 +202,7 @@ export default function Features() {
               <div className="absolute -inset-6 bg-gradient-to-r from-red-500/10 via-red-400/10 to-red-500/10 rounded-3xl blur-3xl" />
               <div className="relative glass-card rounded-3xl p-3 shadow-2xl">
                 <img
-                  src="/images/dashboard-mockup.png"
+                  src="/images/dashboard.jpg"
                   alt="HRFlow Dashboard"
                   className="rounded-2xl w-full"
                   loading="lazy"

@@ -26,7 +26,7 @@ export default function Privacy() {
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
                   <p className="text-gray-600 leading-relaxed">
-                    HRFlow, a product of NexusLabs ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our HR management platform and related services (collectively, the "Services").
+                    HRFlow, a product of NexuxLabs ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our HR management platform and related services (collectively, the "Services").
                   </p>
                   <p className="text-gray-600 leading-relaxed mt-3">
                     By using our Services, you agree to the collection and use of information in accordance with this policy. If you do not agree with the terms of this policy, please do not access the Services.
@@ -115,7 +115,7 @@ export default function Privacy() {
                     If you have any questions about this Privacy Policy, please contact us at:
                   </p>
                   <p className="text-gray-600 mt-3">
-                    <strong>Company:</strong> NexusLabs (HRFlow)<br />
+                    <strong>Company:</strong> NexuxLabs (HRFlow)<br />
                     <strong>Email:</strong> privacy@hrflow.app<br />
                     <strong>Address:</strong> 123 Innovation Drive, San Francisco, CA 94105<br />
                     <strong>Phone:</strong> +1 (555) 123-4567

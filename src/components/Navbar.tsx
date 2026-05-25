@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Logo from './Logo';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -10,7 +9,6 @@ const navLinks = [
   { name: 'Features', path: '/features' },
   { name: 'Pricing', path: '/pricing' },
   { name: 'FAQ', path: '/faq' },
-  { name: 'Contact', path: '/contact' },
 ];
 
 export default function Navbar() {
@@ -33,16 +31,16 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'glass-navbar shadow-lg shadow-red-500/5'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'glass-navbar shadow-lg shadow-red-500/5'
+        : 'bg-transparent'
+        }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
-          <Link to="/">
-            <Logo size="md" variant="dark" />
+          <Link to="/" className='flex gap-0.5 items-center'>
+            <img src='/images/logo.png' height={50} width={50} />
+            <span className='text-3xl bg-linear-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent font-bold'>NexuxHR</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -51,11 +49,10 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 ${
-                  location.pathname === link.path
-                    ? 'text-primary-700'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/60'
-                }`}
+                className={`relative rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 ${location.pathname === link.path
+                  ? 'text-primary-700'
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/60'
+                  }`}
               >
                 {link.name}
                 {location.pathname === link.path && (
@@ -110,11 +107,10 @@ export default function Navbar() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`block rounded-lg px-4 py-3 text-sm font-medium transition-all ${
-                    location.pathname === link.path
-                      ? 'bg-primary-50 text-primary-700'
-                      : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
-                  }`}
+                  className={`block rounded-lg px-4 py-3 text-sm font-medium transition-all ${location.pathname === link.path
+                    ? 'bg-primary-50 text-primary-700'
+                    : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                    }`}
                 >
                   {link.name}
                 </Link>

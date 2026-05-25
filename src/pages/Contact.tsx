@@ -50,7 +50,7 @@ export default function Contact() {
               <AnimatedSection direction="right">
                 <h2 className="text-2xl font-bold text-gray-900">Get in Touch</h2>
                 <p className="mt-4 text-gray-600 leading-relaxed">
-                  Whether you want to schedule a demo, discuss enterprise pricing, or just ask a question — our team at <span className="font-semibold text-red-600">NexusLabs</span> is ready to help.
+                  Whether you want to schedule a demo, discuss enterprise pricing, or just ask a question — our team at <span className="font-semibold text-red-600">NexuxLabs</span> is ready to help.
                 </p>
 
                 <div className="mt-8 space-y-6">

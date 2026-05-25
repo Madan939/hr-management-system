@@ -13,7 +13,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: '2023', title: 'Founded', desc: 'HRFlow was born at NexusLabs from a simple idea: HR should be easy.' },
+  { year: '2023', title: 'Founded', desc: 'HRFlow was born at NexuxLabs from a simple idea: HR should be easy.' },
   { year: '2024', title: 'Seed Funding', desc: 'Raised $5M to build the future of HR management.' },
   { year: '2025', title: 'Beta Launch', desc: '100+ companies joined our beta program.' },
   { year: '2026', title: 'Public Launch', desc: 'Launching to the world — and this is just the beginning.' },
@@ -39,7 +39,7 @@ export default function About() {
               </h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">
                 We believe that managing people shouldn't be complicated. HRFlow was built by{' '}
-                <span className="font-semibold text-red-600">NexusLabs</span>{' '}
+                <span className="font-semibold text-red-600">NexuxLabs</span>{' '}
                 to give HR teams superpowers — so they can focus on what really matters: their people.
               </p>
             </AnimatedSection>
@@ -60,7 +60,7 @@ export default function About() {
                 <span className="text-gradient">Built With Purpose</span>
               </h2>
               <p className="mt-6 text-gray-600 leading-relaxed">
-                At <span className="font-semibold text-gray-900">NexusLabs</span>, our team spent years wrestling with clunky HR systems that made simple tasks feel impossible. Spreadsheets for attendance, separate tools for payroll, another system for recruitment — it was chaos.
+                At <span className="font-semibold text-gray-900">NexuxLabs</span>, our team spent years wrestling with clunky HR systems that made simple tasks feel impossible. Spreadsheets for attendance, separate tools for payroll, another system for recruitment — it was chaos.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
                 So we decided to build what we always wished existed: a single, beautiful, powerful platform that brings all of HR together. HRFlow is the result of countless hours of research, design, and engineering — built by people who truly understand HR challenges.
@@ -183,7 +183,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* NexusLabs Section */}
+      {/* NexuxLabs Section */}
       <section className="py-20 bg-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-72 h-72 bg-red-900/30 rounded-full blur-3xl" />
@@ -193,17 +193,17 @@ export default function About() {
           <AnimatedSection>
             <p className="text-sm font-medium uppercase tracking-widest text-red-400 mb-4">Powered By</p>
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              NexusLabs
+              NexuxLabs
             </h2>
             <p className="mt-6 text-lg text-gray-400 leading-relaxed max-w-2xl mx-auto">
-              NexusLabs is a forward-thinking technology company dedicated to building innovative software solutions that transform how businesses operate. HRFlow is our flagship product, crafted with the same passion for excellence that drives everything we do.
+              NexuxHR was started in process early 2025 as randomly, when NexuxLabs started the project was major highlight for NexuxLabs and started to working on it on the end of 2025
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-8">
               {[
-                { label: 'Founded', value: '2023' },
-                { label: 'Products', value: '3+' },
-                { label: 'Team Members', value: '50+' },
-                { label: 'Countries', value: '12+' },
+                { label: 'Founded', value: '2025' },
+                { label: 'Products', value: '2' },
+                { label: 'Team Members', value: '15+' },
+                { label: 'Countries', value: '1' },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="text-2xl font-extrabold text-white">{stat.value}</p>

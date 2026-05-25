@@ -8,7 +8,7 @@ const faqCategories = [
   {
     category: 'General',
     faqs: [
-      { q: 'What is HRFlow?', a: 'HRFlow is an all-in-one HR management platform designed for modern companies, built by NexusLabs. It helps you manage employees, track attendance, process payroll, run recruitment, conduct performance reviews, and generate insightful reports — all from a single, beautiful dashboard.' },
+      { q: 'What is HRFlow?', a: 'HRFlow is an all-in-one HR management platform designed for modern companies, built by NexuxLabs. It helps you manage employees, track attendance, process payroll, run recruitment, conduct performance reviews, and generate insightful reports — all from a single, beautiful dashboard.' },
       { q: 'Who is HRFlow for?', a: 'HRFlow is built for companies of all sizes — from startups with 10 employees to enterprises with thousands. Whether you have a dedicated HR team or a founder wearing multiple hats, HRFlow simplifies HR management for everyone.' },
       { q: 'Is HRFlow available globally?', a: 'Yes! HRFlow supports companies worldwide with multi-currency payroll, multi-language support, and compliance features for various regions. We\'re constantly expanding our global capabilities.' },
       { q: 'When is HRFlow launching?', a: 'We\'re currently in our pre-launch phase. You can sign up for early access and be among the first to experience HRFlow when we launch. Early access members also get exclusive pricing benefits.' },
@@ -97,13 +97,13 @@ export default function FAQ() {
 
   const filteredCategories = searchQuery
     ? faqCategories.map((cat) => ({
-        ...cat,
-        faqs: cat.faqs.filter(
-          (faq) =>
-            faq.q.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            faq.a.toLowerCase().includes(searchQuery.toLowerCase())
-        ),
-      })).filter((cat) => cat.faqs.length > 0)
+      ...cat,
+      faqs: cat.faqs.filter(
+        (faq) =>
+          faq.q.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          faq.a.toLowerCase().includes(searchQuery.toLowerCase())
+      ),
+    })).filter((cat) => cat.faqs.length > 0)
     : faqCategories.filter((cat) => cat.category === activeCategory);
 
   return (
@@ -156,11 +156,10 @@ export default function FAQ() {
                   <button
                     key={cat.category}
                     onClick={() => setActiveCategory(cat.category)}
-                    className={`rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${
-                      activeCategory === cat.category
+                    className={`rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${activeCategory === cat.category
                         ? 'gradient-primary text-white shadow-lg shadow-red-500/25'
                         : 'glass-card text-gray-600 hover:text-gray-900'
-                    }`}
+                      }`}
                   >
                     {cat.category}
                   </button>

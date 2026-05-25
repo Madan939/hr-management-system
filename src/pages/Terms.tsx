@@ -26,14 +26,14 @@ export default function Terms() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  By accessing and using HRFlow's services ("Services"), operated by NexusLabs, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by the above, please do not use this service.
+                  By accessing and using HRFlow's services ("Services"), operated by NexuxLabs, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by the above, please do not use this service.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description of Services</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  HRFlow, a product of NexusLabs, provides a cloud-based human resources management platform that includes employee management, attendance tracking, leave management, payroll processing, recruitment tools, performance review systems, and analytics & reporting capabilities. The specific features available depend on your selected subscription plan.
+                  HRFlow, a product of NexuxLabs, provides a cloud-based human resources management platform that includes employee management, attendance tracking, leave management, payroll processing, recruitment tools, performance review systems, and analytics & reporting capabilities. The specific features available depend on your selected subscription plan.
                 </p>
               </div>
 
@@ -93,14 +93,14 @@ export default function Terms() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Intellectual Property</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  The Services and all related materials, including software, logos, and documentation, are the intellectual property of NexusLabs. Nothing in these Terms grants you any right to use our intellectual property for any purpose other than using the Services as intended.
+                  The Services and all related materials, including software, logos, and documentation, are the intellectual property of NexuxLabs. Nothing in these Terms grants you any right to use our intellectual property for any purpose other than using the Services as intended.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Limitation of Liability</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  To the maximum extent permitted by law, NexusLabs shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, or goodwill, resulting from your access to or use of the Services.
+                  To the maximum extent permitted by law, NexuxLabs shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, or goodwill, resulting from your access to or use of the Services.
                 </p>
               </div>
 
@@ -131,7 +131,7 @@ export default function Terms() {
                   If you have any questions about these Terms, please contact us:
                 </p>
                 <p className="text-gray-600 mt-3">
-                  <strong>Company:</strong> NexusLabs (HRFlow)<br />
+                  <strong>Company:</strong> NexuxLabs (HRFlow)<br />
                   <strong>Email:</strong> legal@hrflow.app<br />
                   <strong>Address:</strong> 123 Innovation Drive, San Francisco, CA 94105<br />
                   <strong>Phone:</strong> +1 (555) 123-4567

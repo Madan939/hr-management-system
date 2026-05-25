@@ -22,9 +22,9 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gray-950 text-gray-400">
+    <footer className="relative bg-primary-950 text-gray-400">
       {/* Top glow line */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary-500/40 to-transparent" />
 
       {/* ── CTA strip ── */}
       <div className="border-b border-white/[0.06]">
@@ -34,13 +34,13 @@ export default function Footer() {
               Ready to simplify your HR?
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              Join the waitlist — launching soon from NexusLabs.
+              Join the waitlist — launching soon from NexuxLabs.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               to="/pricing"
-              className="gradient-primary inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-red-950/40 transition-all hover:-translate-y-0.5"
+              className="gradient-primary inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-950/40 transition-all hover:-translate-y-0.5"
             >
               Get Early Access
               <ArrowRight className="h-4 w-4" />
@@ -61,11 +61,9 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="lg:col-span-4">
-            <Link to="/" className="inline-flex items-center gap-2.5">
-              <LogoIcon className="h-8 w-8" />
-              <span className="text-lg font-bold text-white">
-                HR<span className="text-red-400">Flow</span>
-              </span>
+            <Link to="/" className='flex gap-2 items-center'>
+              <img src='/images/logo.png' height={50} width={50} />
+              <span className='text-3xl text-white font-bold tracking-tight'>Nexux<span className='text-primary-400'>HR</span></span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-6 text-gray-500">
               One platform for employee management, attendance, leave, payroll, recruitment, performance, and analytics.
@@ -73,16 +71,16 @@ export default function Footer() {
 
             {/* Contact details */}
             <div className="mt-6 space-y-2.5 text-sm">
-              <a href="mailto:hello@hrflow.app" className="flex items-center gap-2.5 transition-colors hover:text-red-300">
-                <Mail className="h-4 w-4 text-red-500/70" />
+              <a href="mailto:hello@hrflow.app" className="flex items-center gap-2.5 transition-colors hover:text-primary-300">
+                <Mail className="h-4 w-4 text-primary-400/80" />
                 hello@hrflow.app
               </a>
-              <a href="tel:+15551234567" className="flex items-center gap-2.5 transition-colors hover:text-red-300">
-                <Phone className="h-4 w-4 text-red-500/70" />
+              <a href="tel:+15551234567" className="flex items-center gap-2.5 transition-colors hover:text-primary-300">
+                <Phone className="h-4 w-4 text-primary-400/80" />
                 +1 (555) 123-4567
               </a>
               <span className="flex items-center gap-2.5">
-                <MapPin className="h-4 w-4 text-red-500/70" />
+                <MapPin className="h-4 w-4 text-primary-400/80" />
                 San Francisco, CA
               </span>
             </div>
@@ -124,7 +122,7 @@ export default function Footer() {
                 <a
                   key={i}
                   href="#"
-                  className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/[0.07] text-xs font-bold text-gray-500 transition-all hover:border-red-500/30 hover:text-red-400"
+                  className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/[0.07] text-xs font-bold text-gray-500 transition-all hover:border-primary-500/30 hover:text-primary-400"
                 >
                   {s}
                 </a>
@@ -137,7 +135,7 @@ export default function Footer() {
       {/* ── Bottom bar ── */}
       <div className="border-t border-white/[0.06]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-xs text-gray-600 sm:flex-row sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} HRFlow · A product of <a href="#" className="text-red-400/80 hover:text-red-300 transition-colors">NexusLabs</a></p>
+          <p>© {new Date().getFullYear()} HRFlow · A product of <a href="#" className="text-primary-400/80 hover:text-primary-300 transition-colors">NexuxLabs</a></p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-gray-400 transition-colors">Privacy</Link>
             <Link to="/terms" className="hover:text-gray-400 transition-colors">Terms</Link>
