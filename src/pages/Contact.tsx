@@ -95,7 +95,9 @@ export default function Contact() {
                 <div className="mt-10">
                   <h3 className="font-semibold text-gray-900 mb-4">Follow Us</h3>
                   <div className="flex gap-3">
-                    {[{ label: "facebook", href: "https://www.facebook.com/people/Nexux-HR/61590411146271/?mibextid=wwXIfr&rdid=rvVEWIuOjV1wH3t4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DsRqRDtbE%2F%3Fmibextid%3DwwXIfr" }].map((social) => (
+                    {[{ label: "facebook", href: "https://www.facebook.com/people/Nexux-HR/61590411146271/?mibextid=wwXIfr&rdid=rvVEWIuOjV1wH3t4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DsRqRDtbE%2F%3Fmibextid%3DwwXIfr" }, {
+                      label: "Instagram", href: "https://www.instagram.com/nexuxhr?igsh=MWZodzVmdWhqdzBlOQ%3D%3D&utm_source=qr"
+                    }].map((social) => (
                       <a
                         key={social.href}
                         href={social.href}

@@ -121,7 +121,7 @@ export default function Footer() {
               {[
                 // { label: 'TikTok', href: 'https://tiktok.com' },
                 { label: 'Facebook', href: 'https://www.facebook.com/people/Nexux-HR/61590411146271/?mibextid=wwXIfr&rdid=rvVEWIuOjV1wH3t4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DsRqRDtbE%2F%3Fmibextid%3DwwXIfr' },
-                // { label: 'Instagram', href: 'https://instagram.com' },
+                { label: 'Instagram', href: 'https://www.instagram.com/nexuxhr?igsh=MWZodzVmdWhqdzBlOQ%3D%3D&utm_source=qr' },
               ].map((s) => (
                 <a
                   key={s.label}
